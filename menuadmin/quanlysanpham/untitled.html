@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sản phẩm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .breadcrumb {
+            list-style: none;
+            padding: 10px 0;
+            margin: 0;
+        }
+        .breadcrumb li {
+            display: inline;
+            margin-right: 5px;
+        }
+        .breadcrumb li a {
+            text-decoration: none;
+            color: #0275d8;
+        }
+        .breadcrumb li.active {
+            color: #555;
+        }
+        .search-bar {
+            margin: 20px 0;
+        }
+        .search-bar input {
+            padding: 5px;
+            margin-right: 80px;
+            width: 300px;
+        }
+        .search-bar button {
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+        .product-list {
+            margin-top: 20px;
+			background-color: white;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        table th {
+            background-color: aqua;
+        }
+        table img {
+            width: 50px;
+            height: auto;
+        }
+        .status {
+            font-weight: bold;
+            color: green;
+        }
+		.tt {
+            font-weight: bold;
+            color: crimson;
+        }
+        .edit-btn, .delete-btn {
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .edit-btn {
+			
+            background-color: #5bc0de;
+            color: white;
+        }
+        .delete-btn {
+            background-color: #d9534f;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ol class="breadcrumb">
+                <li style="color : #0275d8"><a href="#">Home</a><a href="http://localhost/73/dssp/#" >&gt;Sản phẩm</a></li>
+            </ol>
+        </nav>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm theo tên">
+            <button type="button">Tìm kiếm</button>
+            <button type="button">Làm mới</button>
+        </div>
+
+        <div class="product-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th width="4%">#</th>
+                        <th width="18%">Tên</th>
+                        <th width="12%">Danh mục</th>
+                        <th width="13%">Hình ảnh</th>
+                        <th width="26%">Thông tin</th>
+                        <th width="13%">Thao Tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Laptop Dell E643</td>
+                        <td>Laptop Dell</td>
+                        <td><img src="image/dell.jpg" style="width:200px"></td>
+                      <td><ul>
+                          <li>Số lượng: 23</li>
+                          <li>Tình trạng: <span class="status">Còn hàng</span></li>
+                          <li>Giá Bán: 14.000.000 ₫</li>
+                          <li>Giảm giá: 12%</li>
+                        </ul>
+                        </td>
+                        <td>
+                            <button class="edit-btn">Sửa</button>
+                            <button class="delete-btn">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Laptop Asus Vivobook 15 X1504ZA-NJ517W
+</td>
+                        <td>Laptop Asus</td>
+                        <td><img src="image/laptop-asus-vivobook-15x-oled-m3504ya-l1268w-thumbnails.webp" style="width : 200px"</td>
+                        <td>
+						 <ul>
+                            <li>Số lượng: 21</li>
+                            <li>Tình trạng: <span class="status">Còn hàng</span></li>
+                            <li>Giá Bán: 22.000.000 ₫</li>
+                            <li>Giảm giá: 12%</li>
+                          </ul>
+                        </td>
+                        <td>
+                            <button class="edit-btn">Sửa</button>
+                            <button class="delete-btn">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td height="192">3</td>
+                      <td>Laptop HP 14s-fq1080AU 4K0Z7PA</td>
+                      <td>Laptop HP</td>
+                      <td><img src = "image/1_5d4979ddc00b47659755336813f89c6f_grande.webp" style = "width : 200px"</td>
+                      <td><ul>
+                        <li>Số lượng: 34</li>
+                        <li>Tình trạng: <span class="tt">Hết hàng</span></li>
+                        <li>Giá Bán: 7.000.000 ₫</li>
+                        <li>Giảm giá: 15%</li>
+                      </ul></td>
+                      <td>
+                            <button class="edit-btn">Sửa</button>
+                            <button class="delete-btn">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Laptop LenovoThinkpad X1 Carbon gen 8</td>
+                        <td>Laptop Lenovo</td>
+                        <td><img src="image/Lenovo-Th_638173491118967582_HasThumb.png" style = "width : 200px"></td>
+                        <td><ul>
+                            <li>Số lượng: 34</li>
+                            <li>Tình trạng: <span class="tt">Hết hàng</span></li>
+                            <li>Giá Bán: 18.000.000 ₫</li>
+                            <li>Giảm giá: 15%</li>
+                          </ul>
+                        </td>
+                        <td>
+                            <button class="edit-btn">Sửa</button>
+                            <button class="delete-btn">Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+

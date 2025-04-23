@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "admin";
 $database = "nhom8web"; // Đổi tên biến từ $sever thành $database
 
 // Create connection
